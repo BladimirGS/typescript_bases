@@ -1,6 +1,10 @@
 (() => {
 
-    const number:number[] = [1,2,3,4,5,6,7,8,9,10];
+    const numeros = [1,2,3,4,5,6,'7']
 
-    number.push(11);
+    console.log(numeros)
+
+    numeros.push(8)
+
+    console.log(numeros)
 })()
