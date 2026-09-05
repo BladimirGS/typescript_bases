@@ -8,7 +8,7 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "target": "es5",
+    "target": "es6",
     "module": "none",
     "types": [],
     // For nodejs:
@@ -42,5 +42,8 @@
     // "moduleDetection": "force",
     // "skipLibCheck": true,
     "removeComments": true,
-  }
+  },
+  "include": [
+    "ES6"
+  ]
 }
