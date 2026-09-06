@@ -19,10 +19,15 @@
         name: 'capitan america',
         weapon: 'escudo'
     }
+    
+    const { name, ...res } = thor;
+
+    console.log(name, res.weapon)
 
     const avengers: hero[] = [iroman, thor, capitanAmerica];
 
-    // for (const a of avengers) {
-    //     console.log(a)
-    // }
+    const [ , heroe2, heroe3] = avengers;
+
+    console.log(heroe2, heroe3)
+
 })()
