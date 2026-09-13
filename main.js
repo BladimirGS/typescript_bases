@@ -1,35 +1,13 @@
 "use strict";
-(() => {
-    class Mutante {
-        mutanPower(id) {
-            return this.name + ' ' + this.realName;
-        }
-    }
-});
-(() => {
-    let client1 = {
-        name: 'Barry Allen',
-        age: 24,
-        address: {
-            id: 1,
-            zip: 'CY2 SUD',
-            city: 'Ottawa'
-        },
-        getFullAddress(id) {
-            return this.address.city;
-        }
+var validations;
+(function (validations) {
+    const validationText = (text) => {
+        return (text.length > 3) ? true : false;
     };
-    let client2 = {
-        name: 'Melissa',
-        age: 30,
-        address: {
-            id: 2,
-            city: 'Toronto',
-            zip: 'K2S USA'
-        },
-        getFullAddress(id) {
-            return this.address.city;
-        }
+    const validateDate = (miDate) => {
+        return (isNaN(miDate.valueOf()))
+            ? false
+            : true;
     };
-})();
+})(validations || (validations = {}));
 //# sourceMappingURL=main.js.map
